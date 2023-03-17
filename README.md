@@ -1,4 +1,4 @@
-# Credit Risk Classification ( Supervised Machine Learning Model)
+# Credit Risk Classification (Supervised Machine Learning Model)
 
 ## Overview of the Analysis
 
@@ -6,7 +6,7 @@
 * A dataset of historical lending activity from a peer-to-peer lending services company was used. 
 * Dependant variable (y value) in this analysis was the "loan status" indicating if a loan is healthy or at risk. 
 * Independent Variables (x values) were loan size, interest rate, borrower income, debt to income ratio, number of accounts and derogatory marks.
-* Describe the stages of the machine learning process you went through as part of this analysis.
+* In this analysis, we first split our data to traning and test sets. Then, define our dependent and independent variables. Next, we crete logistic regression model and fit our original data to this model. Trained model is used to make predictions. Lastly, we evaluate the model`s performance. 
 * Two diffeent Logistic Regression models were created by using the original data set and randomy over resampled data set (to get rid of the imbalances). In the end their results -which was gathered with scikit-learn library- were compared.
 
 ## Results
@@ -25,15 +25,13 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+Analysis show that collected data can be effectively used to train and test the Machine Learning Classification Model. For better preditions solving the imbalance sampling issue is needed.
 
-If you do not recommend any of the models, please justify your reasoning.
+Randomly oversampling the data helps us to get higher balanced accuracy and recall scores. With higher recall value, model can predict risky loans more accurately.
 
+With incorrect predictions we have two issues:
 
-Using Machine learning, we can effectively train and model data to prevent fraud based on data collectved from customers.
+* False positives (where users are flagged as risky, but are actually healthy)
+* False negatives (where users are not flagged as risky but are actually risky)
 
-oversampling the training model, we managed to get an result that was had a high accuracy of predicting risky loans.
-
-False positives where users are flagged as wisky, but are actually healthy will mean that certain customers will be blocked from taking out legitimate loan, sacrificing some of the bottom line revenue, however, predicting the frauduelent activity is more iportant because the purpose of this analysis is to reduce the amount of risky loans and there is a high likelyhood that the risky loans costly.
+both cases have its costs. It is important to predict both 1`s and 0`s. Therefore, model should have good accuracy in terms of both. 
