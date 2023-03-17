@@ -1,48 +1,27 @@
-# Module 12 Report Template
+# Credit Risk Classification ( Supervised Machine Learning Model)
 
 ## Overview of the Analysis
 
-In this Challenge, you’ll use various techniques to train and evaluate a model based on loan risk. You’ll use a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
-
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
 * The purpose of this analysis is to build a model that can identify the creditworthiness of borrowers.
 * A dataset of historical lending activity from a peer-to-peer lending services company was used. 
-* 
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-
-
-The "target/dependant variable" or "y value" was the loan_status indicating if a loan was at risk. While the feature set (Independent Variable) included additional data points collected such as loan_size
-The financial information was based on several datat points gathered including;
-
-loan_size
-interest_rate
-borrower_income
-debt_to_income
-num_of_accounts
-derogatory_marks
-
-
+* Dependant variable (y value) in this analysis was the "loan status" indicating if a loan is healthy or at risk. 
+* Independent Variables (x values) were loan size, interest rate, borrower income, debt to income ratio, number of accounts and derogatory marks.
 * Describe the stages of the machine learning process you went through as part of this analysis.
-* Results from Logistic Regression Model and Resampling Model have been compared.
-
-
-
-Implement machine learning models.
-Use resampling to attempt to address class imbalance.
-Evaluate the performance of machine learning models using scikit-learn library.
+* Two diffeent Logistic Regression models were created by using the original data set and randomy over resampled data set (to get rid of the imbalances). In the end their results -which was gathered with scikit-learn library- were compared.
 
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+* Logistic Regression Model with Original Data
+ 
+![Balanced Accuracy Score](./Images/balanced_accuracy_score_1.JPG)
+![Classification Report](./Images/classification_report_1.JPG)
 
+* Logistic Regression Model with Randomly Oversampled Data
 
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+![Balanced Accuracy Score](./Images/balanced_accuracy_score_2.JPG)
+![Classification Report](./Images/classification_report_2.JPG)
 
 ## Summary
 
