@@ -6,12 +6,10 @@
 * A dataset of historical lending activity from a peer-to-peer lending services company was used. 
 * Dependant variable (y value) in this analysis was the "loan status" indicating if a loan is healthy or at risk. 
 * Independent Variables (x values) were loan size, interest rate, borrower income, debt to income ratio, number of accounts and derogatory marks.
-* In this analysis, we first split our data to traning and test sets. Then, define our dependent and independent variables. Next, we crete logistic regression model and fit our original data to this model. Trained model is used to make predictions. Lastly, we evaluate the model`s performance. 
-* Two diffeent Logistic Regression models were created by using the original data set and randomy over resampled data set (to get rid of the imbalances). In the end their results -which was gathered with scikit-learn library- were compared.
+* In this analysis, we first split our data to traning and test sets. Then, define our dependent and independent variables. Next, we create logistic regression model and fit our original data to this model. Trained model is used to make predictions. Lastly, we evaluate the model`s performance. 
+* Two diffeent Logistic Regression models were created by using the original data set and randomy over resampled data set (to get rid of the imbalances). In the end, their results -which was gathered with scikit-learn library- were compared.
 
 ## Results
-
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Logistic Regression Model with Original Data
  
